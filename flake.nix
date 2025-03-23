@@ -7,7 +7,7 @@
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
     elemental-wine-source = {
-      url = "gitlab:ElementalWarrior/wine?host=gitlab.winehq.org&ref=affinity-photo3-wine9.13-part3";
+      url = "gitlab:ElementalWarrior/wine?host=gitlab.winehq.org&ref=affinity-photo2-wine10.3";
       flake = false;
     };
 
@@ -54,7 +54,7 @@
         })
         .overrideAttrs {
           src = elemental-wine-source;
-          version = "9.13-part3";
+          version = "10.3";
         };
       wineUnwrapped = symlink {
         wine = wineUnstable;
